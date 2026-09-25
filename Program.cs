@@ -110,6 +110,8 @@ mlContext.BinaryClassification.Evaluate(
     labelColumnName: "Label");
 
 Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
+Console.WriteLine($"Precision: {metrics.PositivePrecision:P2}");
+Console.WriteLine($"Recall: {metrics.PositiveRecall:P2}");
 Console.WriteLine($"F1 Score: {metrics.F1Score:P2}");
 
 /*
