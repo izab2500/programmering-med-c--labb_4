@@ -184,22 +184,15 @@ The model uses this information to predict whether the passenger survived.
 TitanicPrediction prediction = predictionEngine.Predict(input);
 
 /*
-
+Calculates the estimated probability of the predicted outcome.
 */
-if (prediction.Survived)
-{
-    Console.WriteLine("Prediction: The passenger survived.");
-}
-else
-{
-    Console.WriteLine("Prediction: The passenger did not survive.");
-}
-// Prints the models estimated probability
-Console.WriteLine($"Probability: {prediction.Probability:P2}");
+float probability = prediction.Survived ? prediction.Probability : 1 - prediction.Probability;
+
+Console.WriteLine($"Prediction: {(prediction.Survived ? "The passenger survived." : "The passenger did not survive.")}");
+Console.WriteLine($"Probability: {probability:P2}");
 
 Console.WriteLine("Press Enter to exit...");
 Console.ReadLine();
-
 
 /*
 Defines how each row in the CSV file should be read.
