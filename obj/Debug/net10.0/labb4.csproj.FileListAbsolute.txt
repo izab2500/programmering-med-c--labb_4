@@ -39,3 +39,4 @@ C:\Users\ziada\Desktop\datateknik\ht-2026_1\programmering-i-csharp\labb4\obj\Deb
 C:\Users\ziada\Desktop\datateknik\ht-2026_1\programmering-i-csharp\labb4\obj\Debug\net10.0\labb4.pdb
 C:\Users\ziada\Desktop\datateknik\ht-2026_1\programmering-i-csharp\labb4\obj\Debug\net10.0\labb4.genruntimeconfig.cache
 C:\Users\ziada\Desktop\datateknik\ht-2026_1\programmering-i-csharp\labb4\obj\Debug\net10.0\ref\labb4.dll
+C:\Users\ziada\Desktop\datateknik\ht-2026_1\programmering-i-csharp\labb4\obj\Debug\net10.0\labb4.sourcelink.json

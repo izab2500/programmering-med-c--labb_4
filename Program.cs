@@ -127,15 +127,43 @@ Console.WriteLine();
 Console.WriteLine("🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊🌊");
 Console.WriteLine();
 
-
+/*
+Age must be between 0 and 100.
+*/
 Console.Write("Enter age: ");
-float age = float.Parse(Console.ReadLine()!);
+float age;
 
+while (!float.TryParse(Console.ReadLine(), out age) || age < 0 || age > 100)
+{
+    Console.WriteLine("Enter a valid age between 0 and 100.");
+    Console.Write("Enter age: ");
+}
+
+/*
+Sex must be either male or female.
+*/
 Console.Write("Enter sex (male/female): ");
-string sex = Console.ReadLine()!;
+string sex = Console.ReadLine()!.ToLower();
 
+while (sex != "male" && sex != "female")
+{
+    Console.WriteLine("Enter a valid sex: male or female.");
+    Console.Write("Enter sex (male/female): ");
+    sex = Console.ReadLine()!.ToLower();
+}
+
+/*
+pclass must be either 1, 2 or 3.
+*/
 Console.Write("Enter passenger class (1/2/3): ");
-float pclass = float.Parse(Console.ReadLine()!);
+float pclass;
+
+while (!float.TryParse(Console.ReadLine(), out pclass) ||
+(pclass != 1 && pclass != 2 && pclass != 3))
+{
+    Console.WriteLine("Enter a valid passenger class.");
+    Console.Write("Enter passenger class (1/2/3): ");
+}
 
 /*
 Creates an object that represents a new passenger.
