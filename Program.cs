@@ -67,7 +67,6 @@ SexEncoded = the numerical values representing male and female.
     "Age",
     "Pclass",
     "SexEncoded"));
-
 /*
 Adds the machine learning algorithm to the pipeline.
 SDCA Logistic Regression is used for binary classification,
@@ -99,7 +98,8 @@ It uses Accuracy and F1 Score to help us understand
 how well the model classifies the passengers.
 
 Accuracy = the percentage of all predictions that are correct.
-
+Precision = Of the passengers predicted to have survived, how many actually survived.
+Recall = Of the passengers who actually survived, how many did the model correctly identify.
 F1 Score = combines precision and recall into one measurement.
 A higher F1 Score means the model has a better balance
 between precision and recall.
